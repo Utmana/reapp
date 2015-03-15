@@ -5,7 +5,6 @@ import Button from 'reapp-ui/components/Button';
 import ButtonGroup from 'reapp-ui/components/ButtonGroup';
 import Card from 'reapp-ui/components/Card';
 import Label from 'reapp-ui/components/Label';
-import Title from 'reapp-ui/components/Title';
 import challengesStore from '../../stores/challenges';
 import Router from 'react-router';
 
@@ -42,6 +41,9 @@ export default React.createClass({
         alert(error);
       });
   },
+  done() {
+    alert('Bra jobbat!');
+  },
   skip() {
     // alert('Not yet implemented!!!');
   },
@@ -51,22 +53,20 @@ export default React.createClass({
     );
 
     return (
-      <View {...this.props} title={[backButton, "Godkänn utmaning"]}>
+      <View {...this.props} title={[backButton, "Påminnelse!"]}>
         <Card>
-          <h2>{this.state.challenge.summary}</h2>
+          <Label title={this.state.challenge.summary} />
         </Card>
         <Card>
-          <p>{this.state.challenge.summary}</p>
-          <a href="http://www.1177.se/Jonkopings-lan/Fakta-och-rad/Behandlingar/Hjart-lungraddning-HLR/">Länk med mer information</a>
+          <p>{this.state.challenge.body}</p>
         </Card>
         <ButtonGroup>
-          <Button color="blue" onTap={this.accept}>Acceptera</Button>
-          <Button onTap={this.skip}>Skippa</Button>
+          <Button color="green" onTap={this.accept}>Jag är klar</Button>
+          <Button onTap={this.skip}>Snooze</Button>
         </ButtonGroup>
         <p>
-          När du accepterar denna utmaning kommer du ha trettio minuter att slutföra utmaningen.
+          Du har tidigare accepterat denna utmaning. Här är din påminnelse ;) 
         </p>
-        <Title>Statistik</Title>
       </View>
     );
   }

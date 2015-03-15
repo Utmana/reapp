@@ -22,6 +22,7 @@ module.exports = ({ routes, route }) =>
     route('app', '/', { dir: '' },
       route('challenges', '/',
         route('challenge', '/challenge/:id'),
+        route('reminder', '/reminder/:id'),
         route('edit', '/challenge/:id/edit')
       ),
       route('teams', '/teams')
