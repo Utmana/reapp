@@ -1,16 +1,16 @@
 'use strict';
-
 import request from 'browser-request';
+import Q from 'q';
 
 function makeRequest(options) {
-  return new Promise(function executor(resolve, reject) {
-    request(options, function (error, response, body) {
-      if (error) {
-        return reject(error);
-      }
-      return resolve(body);
-    });
+  var deferred = Q.defer();
+  request(options, function (error, response, body) {
+    if (error) {
+      return deferred.reject(error);
+    }
+    return deferred.resolve(body);
   });
+  return deferred.promise;
 }
 
 module.exports = {

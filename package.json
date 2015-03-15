@@ -20,6 +20,7 @@
     "reapp-ui": "^0.10.23",
     "flux": "^2.0.1",
     "object-assign": "^2.0.0",
-    "browser-request": "^0.3.3"
+    "browser-request": "^0.3.3",
+    "q": "^1.2.0"
   }
 }
