@@ -66,7 +66,7 @@ export default React.createClass({
           <h2>{this.state.challenge.summary}</h2>
         </Card>
         <Card>
-          <p>{this.state.challenge.summary}</p>
+          <p>{this.state.challenge.body}</p>
           <a href="http://www.1177.se/Jonkopings-lan/Fakta-och-rad/Behandlingar/Hjart-lungraddning-HLR/">Länk med mer information</a>
         </Card>
         <ButtonGroup>
@@ -78,8 +78,8 @@ export default React.createClass({
         </p>
         <Title>Statistik</Title>
         <ButtonGroup>
-          <Button color="blue" onTap={() => this.transitionTo('edit', { id: this.state.challenge._id})}>Edit</Button>
-          <Button onTap={this.del}>Delete</Button>
+          <Button color="blue" onTap={() => this.transitionTo('edit', { id: this.state.challenge._id})}>Redigera</Button>
+          <Button onTap={this.del}>Ta bort</Button>
         </ButtonGroup>
       </View>
     );
