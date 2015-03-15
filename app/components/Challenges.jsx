@@ -39,7 +39,7 @@ export default React.createClass({
     }
     return (
       <NestedViewList {...this.routedViewListProps()}>
-        <View title={[this.props.handle, 'Utmaningar']}>
+        <View title={[this.props.handle, 'Utmaningar', <Button chromeless onTap={() => this.transitionTo('edit', {id: -1})}>Skapa utmaning</Button>]}>
           <img src="/assets/shared/subway.jpg"/>
           <Title>Topplista utmaningar</Title>
           <List>{this.state.challenges.map(renderListItem)}</List>

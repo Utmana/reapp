@@ -7,11 +7,34 @@ import Card from 'reapp-ui/components/Card';
 import Label from 'reapp-ui/components/Label';
 import Input from 'reapp-ui/components/Input';
 import Textarea from 'reapp-ui/components/Textarea';
-
-// looking for more examples? check our kitchen-sink repository:
-// https://github.com/reapp/kitchen-sink/tree/master/app/components
+import challengesStore from '../../stores/challenges';
+import Router from 'react-router';
+import AppDispatcher from '../../dispatcher';
 
 export default React.createClass({
+  mixins: [React.addons.LinkedStateMixin, Router.Navigation, Router.State],
+  save() {
+    AppDispatcher.dispatch({
+      actionType: 'save',
+      data: this.state
+    });
+    this.transitionTo('/');
+  },
+  getInitialState() {
+    var params = this.getParams();
+    if (params.id > 0) {
+      var _this = this;
+      challengesStore
+        .get(params.id)
+        .then(function (result) {
+          _this.setState(result);
+        })
+        .catch(function (error) {
+          alert(error);
+        });
+    }
+    return {};
+  },
   render() {
     var backButton = (
       <BackButton onTap={() => window.history.back()} />
@@ -20,14 +43,14 @@ export default React.createClass({
     return (
       <View {...this.props} title={[backButton, "Redigera utmaning"]}>
         <Card>
-          <Input placeholder="Kort beskrivning av utmaningen"/>
+          <Input placeholder="Kort beskrivning av utmaningen" valueLink={this.linkState('summary')}/>
         </Card>
         <Card>
-          <Textarea placeholder="Beskriv vad mottagaren ska göra och varför det gör världen till en bättre plats"/>
+          <Textarea placeholder="Beskriv vad mottagaren ska göra och varför det gör världen till en bättre plats" valueLink={this.linkState('body')}/>
         </Card>
         <ButtonGroup>
-          <Button>Acceptera</Button>
-          <Button>Skippa</Button>
+          <Button onTap={this.save}>Acceptera</Button>
+          <Button onTap={this.back}>Skippa</Button>
         </ButtonGroup>
       </View>
     );

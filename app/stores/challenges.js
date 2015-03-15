@@ -5,6 +5,8 @@ import request from '../services/request';
 import {
   BASE_URL
 } from '../constants/config';
+import AppDispatcher from '../dispatcher';
+
 var EventEmitter = events.EventEmitter;
 
 var ChallengesStore = assign({}, EventEmitter.prototype, {
@@ -38,6 +40,24 @@ var ChallengesStore = assign({}, EventEmitter.prototype, {
    */
   decline() {
 
+  },
+  edit(data) {
+    return request.put(`${BASE_URL}/challenges/${id}`, data);
+  },
+  create(data) {
+    return request.post(`${BASE_URL}/challenges`, data)
+  }
+});
+
+AppDispatcher.register(function (action) {
+  switch (action.actionType) {
+    case 'save':
+      var data = action.data;
+      if (data.id) {
+        return ChallengesStore.edit(data);
+      }
+      return ChallengesStore.create(data);
+      break;
   }
 });
 
