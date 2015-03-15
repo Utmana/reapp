@@ -1,0 +1,940 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json reapp@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/cln/src/pet/utmana/reapp',
+6 verbose install   [ 'react',
+6 verbose install     'reapp-platform',
+6 verbose install     'reapp-ui',
+6 verbose install     'reapp-routes',
+6 verbose install     'react-router',
+6 verbose install     'reapp-request',
+6 verbose install     'reapp-component' ] ]
+7 info preinstall reapp@1.0.0
+8 warn package.json reapp-request@0.2.0 No README data
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'react-router@git+https://github.com/reapp/react-router#0ceb428804b71d3',
+10 verbose cache add   null ]
+11 verbose cache add name=undefined spec="react-router@git+https://github.com/reapp/react-router#0ceb428804b71d3" args=["react-router@git+https://github.com/reapp/react-router#0ceb428804b71d3",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: '#0ceb428804b71d3',
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'react-router@git+https://github.com/reapp/react-router',
+12 verbose parsed url   path: 'react-router@git+https://github.com/reapp/react-router',
+12 verbose parsed url   href: 'react-router@git+https://github.com/reapp/react-router#0ceb428804b71d3' }
+13 verbose already installed skipping reapp-request@^0.2.0 /Users/cln/src/pet/utmana/reapp
+14 verbose already installed skipping reapp-component@^1.0.0 /Users/cln/src/pet/utmana/reapp
+15 verbose cache add name="react-router" spec="git+https://github.com/reapp/react-router#0ceb428804b71d3" args=["react-router","git+https://github.com/reapp/react-router#0ceb428804b71d3"]
+16 verbose parsed url { protocol: 'git+https:',
+16 verbose parsed url   slashes: true,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: 'github.com',
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: 'github.com',
+16 verbose parsed url   hash: '#0ceb428804b71d3',
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: '/reapp/react-router',
+16 verbose parsed url   path: '/reapp/react-router',
+16 verbose parsed url   href: 'git+https://github.com/reapp/react-router#0ceb428804b71d3' }
+17 silly lockFile e5ddca67-ps-github-com-reapp-react-router https://github.com/reapp/react-router
+18 verbose lock https://github.com/reapp/react-router /Users/cln/.npm/e5ddca67-ps-github-com-reapp-react-router.lock
+19 verbose addRemoteGit [ 'https://github.com/reapp/react-router', '0ceb428804b71d3' ]
+20 verbose already installed skipping react@^0.13.0 /Users/cln/src/pet/utmana/reapp
+21 verbose already installed skipping reapp-platform@^1.0.0 /Users/cln/src/pet/utmana/reapp
+22 verbose already installed skipping reapp-ui@^0.10.0 /Users/cln/src/pet/utmana/reapp
+23 verbose already installed skipping reapp-routes@^0.9.0 /Users/cln/src/pet/utmana/reapp
+24 verbose git remote.origin.url https://github.com/reapp/react-router
+25 verbose git fetch -a origin (https://github.com/reapp/react-router)
+26 verbose git rev-list -n1 0ceb428804b71d3 0ceb428804b71d3f0de569f257e7cd27e4fce223
+27 verbose resolved git url git+https://github.com/reapp/react-router#0ceb428804b71d3f0de569f257e7cd27e4fce223
+28 verbose tar unpack /var/folders/2m/cp_m9s6s1bzc1bzj9xm1hzsw0000gn/T/npm-3264-bJps5_jp/1426393715513-0.705502376658842/tmp.tgz
+29 silly lockFile 30285383-0-705502376658842-tmp-tgz-unpack tar:///var/folders/2m/cp_m9s6s1bzc1bzj9xm1hzsw0000gn/T/npm-3264-bJps5_jp/1426393715513-0.705502376658842/tmp.tgz-unpack
+30 verbose lock tar:///var/folders/2m/cp_m9s6s1bzc1bzj9xm1hzsw0000gn/T/npm-3264-bJps5_jp/1426393715513-0.705502376658842/tmp.tgz-unpack /Users/cln/.npm/30285383-0-705502376658842-tmp-tgz-unpack.lock
+31 silly lockFile 02df474c-715513-0-705502376658842-tmp-tgz tar:///var/folders/2m/cp_m9s6s1bzc1bzj9xm1hzsw0000gn/T/npm-3264-bJps5_jp/1426393715513-0.705502376658842/tmp.tgz
+32 verbose lock tar:///var/folders/2m/cp_m9s6s1bzc1bzj9xm1hzsw0000gn/T/npm-3264-bJps5_jp/1426393715513-0.705502376658842/tmp.tgz /Users/cln/.npm/02df474c-715513-0-705502376658842-tmp-tgz.lock
+33 silly gunzTarPerm modes [ '755', '644' ]
+34 silly gunzTarPerm extractEntry
+35 silly gunzTarPerm modified mode [ '', 509, 493 ]
+36 silly gunzTarPerm extractEntry .gitignore
+37 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+38 silly gunzTarPerm extractEntry .jshintignore
+39 silly gunzTarPerm modified mode [ '.jshintignore', 436, 420 ]
+40 silly gunzTarPerm extractEntry .jshintrc
+41 silly gunzTarPerm modified mode [ '.jshintrc', 436, 420 ]
+42 silly gunzTarPerm extractEntry .npmignore
+43 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+44 silly gunzTarPerm extractEntry .travis.yml
+45 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+46 silly gunzTarPerm extractEntry CHANGELOG.md
+47 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+48 silly gunzTarPerm extractEntry CONTRIBUTING.md
+49 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+50 silly gunzTarPerm extractEntry LICENSE
+51 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+52 silly gunzTarPerm extractEntry README.md
+53 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+54 silly gunzTarPerm extractEntry UPGRADE_GUIDE.md
+55 silly gunzTarPerm modified mode [ 'UPGRADE_GUIDE.md', 436, 420 ]
+56 silly gunzTarPerm extractEntry actions/
+57 silly gunzTarPerm modified mode [ 'actions/', 509, 493 ]
+58 silly gunzTarPerm extractEntry actions/LocationActions.js
+59 silly gunzTarPerm modified mode [ 'actions/LocationActions.js', 436, 420 ]
+60 silly gunzTarPerm extractEntry behaviors/
+61 silly gunzTarPerm modified mode [ 'behaviors/', 509, 493 ]
+62 silly gunzTarPerm extractEntry behaviors/ImitateBrowserBehavior.js
+63 silly gunzTarPerm modified mode [ 'behaviors/ImitateBrowserBehavior.js', 436, 420 ]
+64 silly gunzTarPerm extractEntry behaviors/ScrollToTopBehavior.js
+65 silly gunzTarPerm modified mode [ 'behaviors/ScrollToTopBehavior.js', 436, 420 ]
+66 silly gunzTarPerm extractEntry bower.json
+67 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+68 silly gunzTarPerm extractEntry components/
+69 silly gunzTarPerm modified mode [ 'components/', 509, 493 ]
+70 silly gunzTarPerm extractEntry components/DefaultRoute.js
+71 silly gunzTarPerm modified mode [ 'components/DefaultRoute.js', 436, 420 ]
+72 silly gunzTarPerm extractEntry components/Link.js
+73 silly gunzTarPerm modified mode [ 'components/Link.js', 436, 420 ]
+74 silly gunzTarPerm extractEntry components/NotFoundRoute.js
+75 silly gunzTarPerm modified mode [ 'components/NotFoundRoute.js', 436, 420 ]
+76 silly gunzTarPerm extractEntry components/Redirect.js
+77 silly gunzTarPerm modified mode [ 'components/Redirect.js', 436, 420 ]
+78 silly gunzTarPerm extractEntry components/Route.js
+79 silly gunzTarPerm modified mode [ 'components/Route.js', 436, 420 ]
+80 silly gunzTarPerm extractEntry components/RouteHandler.js
+81 silly gunzTarPerm modified mode [ 'components/RouteHandler.js', 436, 420 ]
+82 silly gunzTarPerm extractEntry components/tests/
+83 silly gunzTarPerm modified mode [ 'components/tests/', 509, 493 ]
+84 silly gunzTarPerm extractEntry components/tests/DefaultRoute-test.js
+85 silly gunzTarPerm modified mode [ 'components/tests/DefaultRoute-test.js', 436, 420 ]
+86 silly gunzTarPerm extractEntry components/tests/Link-test.js
+87 silly gunzTarPerm modified mode [ 'components/tests/Link-test.js', 436, 420 ]
+88 silly gunzTarPerm extractEntry components/tests/NotFoundRoute-test.js
+89 silly gunzTarPerm modified mode [ 'components/tests/NotFoundRoute-test.js', 436, 420 ]
+90 silly gunzTarPerm extractEntry components/tests/Redirect-test.js
+91 silly gunzTarPerm modified mode [ 'components/tests/Redirect-test.js', 436, 420 ]
+92 silly gunzTarPerm extractEntry components/tests/RouteHandler-test.js
+93 silly gunzTarPerm modified mode [ 'components/tests/RouteHandler-test.js', 436, 420 ]
+94 silly gunzTarPerm extractEntry dist/
+95 silly gunzTarPerm modified mode [ 'dist/', 509, 493 ]
+96 silly gunzTarPerm extractEntry dist/react-router.js
+97 silly gunzTarPerm modified mode [ 'dist/react-router.js', 436, 420 ]
+98 silly gunzTarPerm extractEntry dist/react-router.min.js
+99 silly gunzTarPerm modified mode [ 'dist/react-router.min.js', 436, 420 ]
+100 silly gunzTarPerm extractEntry docs/
+101 silly gunzTarPerm modified mode [ 'docs/', 509, 493 ]
+102 silly gunzTarPerm extractEntry docs/api/
+103 silly gunzTarPerm modified mode [ 'docs/api/', 509, 493 ]
+104 silly gunzTarPerm extractEntry docs/api/README.md
+105 silly gunzTarPerm modified mode [ 'docs/api/README.md', 436, 420 ]
+106 silly gunzTarPerm extractEntry docs/api/Router.md
+107 silly gunzTarPerm modified mode [ 'docs/api/Router.md', 436, 420 ]
+108 silly gunzTarPerm extractEntry docs/api/components/
+109 silly gunzTarPerm modified mode [ 'docs/api/components/', 509, 493 ]
+110 silly gunzTarPerm extractEntry docs/api/components/DefaultRoute.md
+111 silly gunzTarPerm modified mode [ 'docs/api/components/DefaultRoute.md', 436, 420 ]
+112 silly gunzTarPerm extractEntry docs/api/components/Link.md
+113 silly gunzTarPerm modified mode [ 'docs/api/components/Link.md', 436, 420 ]
+114 silly gunzTarPerm extractEntry docs/api/components/NotFoundRoute.md
+115 silly gunzTarPerm modified mode [ 'docs/api/components/NotFoundRoute.md', 436, 420 ]
+116 silly gunzTarPerm extractEntry docs/api/components/Redirect.md
+117 silly gunzTarPerm modified mode [ 'docs/api/components/Redirect.md', 436, 420 ]
+118 silly gunzTarPerm extractEntry docs/api/components/Route.md
+119 silly gunzTarPerm modified mode [ 'docs/api/components/Route.md', 436, 420 ]
+120 silly gunzTarPerm extractEntry docs/api/components/RouteHandler.md
+121 silly gunzTarPerm modified mode [ 'docs/api/components/RouteHandler.md', 436, 420 ]
+122 silly gunzTarPerm extractEntry docs/api/create.md
+123 silly gunzTarPerm modified mode [ 'docs/api/create.md', 436, 420 ]
+124 silly gunzTarPerm extractEntry docs/api/misc/
+125 silly gunzTarPerm modified mode [ 'docs/api/misc/', 509, 493 ]
+126 silly gunzTarPerm extractEntry docs/api/misc/Location.md
+127 silly gunzTarPerm modified mode [ 'docs/api/misc/Location.md', 436, 420 ]
+128 silly gunzTarPerm extractEntry docs/api/misc/transition.md
+129 silly gunzTarPerm modified mode [ 'docs/api/misc/transition.md', 436, 420 ]
+130 silly gunzTarPerm extractEntry docs/api/mixins/
+131 silly gunzTarPerm modified mode [ 'docs/api/mixins/', 509, 493 ]
+132 silly gunzTarPerm extractEntry docs/api/mixins/Navigation.md
+133 silly gunzTarPerm modified mode [ 'docs/api/mixins/Navigation.md', 436, 420 ]
+134 silly gunzTarPerm extractEntry docs/api/mixins/State.md
+135 silly gunzTarPerm modified mode [ 'docs/api/mixins/State.md', 436, 420 ]
+136 silly gunzTarPerm extractEntry docs/api/run.md
+137 silly gunzTarPerm modified mode [ 'docs/api/run.md', 436, 420 ]
+138 silly gunzTarPerm extractEntry docs/guides/
+139 silly gunzTarPerm modified mode [ 'docs/guides/', 509, 493 ]
+140 silly gunzTarPerm extractEntry docs/guides/flux.md
+141 silly gunzTarPerm modified mode [ 'docs/guides/flux.md', 436, 420 ]
+142 silly gunzTarPerm extractEntry docs/guides/overview.md
+143 silly gunzTarPerm modified mode [ 'docs/guides/overview.md', 436, 420 ]
+144 silly gunzTarPerm extractEntry docs/guides/path-matching.md
+145 silly gunzTarPerm modified mode [ 'docs/guides/path-matching.md', 436, 420 ]
+146 silly gunzTarPerm extractEntry docs/guides/server-rendering.md
+147 silly gunzTarPerm modified mode [ 'docs/guides/server-rendering.md', 436, 420 ]
+148 silly gunzTarPerm extractEntry docs/guides/testing.md
+149 silly gunzTarPerm modified mode [ 'docs/guides/testing.md', 436, 420 ]
+150 silly gunzTarPerm extractEntry examples/
+151 silly gunzTarPerm modified mode [ 'examples/', 509, 493 ]
+152 silly gunzTarPerm extractEntry examples/README.md
+153 silly gunzTarPerm modified mode [ 'examples/README.md', 436, 420 ]
+154 silly gunzTarPerm extractEntry examples/animations/
+155 silly gunzTarPerm modified mode [ 'examples/animations/', 509, 493 ]
+156 silly gunzTarPerm extractEntry examples/animations/app.css
+157 silly gunzTarPerm modified mode [ 'examples/animations/app.css', 436, 420 ]
+158 silly gunzTarPerm extractEntry examples/animations/app.js
+159 silly gunzTarPerm modified mode [ 'examples/animations/app.js', 436, 420 ]
+160 silly gunzTarPerm extractEntry examples/animations/index.html
+161 silly gunzTarPerm modified mode [ 'examples/animations/index.html', 436, 420 ]
+162 silly gunzTarPerm extractEntry examples/async-data/
+163 silly gunzTarPerm modified mode [ 'examples/async-data/', 509, 493 ]
+164 silly gunzTarPerm extractEntry examples/async-data/app.css
+165 silly gunzTarPerm modified mode [ 'examples/async-data/app.css', 436, 420 ]
+166 silly gunzTarPerm extractEntry examples/async-data/app.js
+167 silly gunzTarPerm modified mode [ 'examples/async-data/app.js', 436, 420 ]
+168 silly gunzTarPerm extractEntry examples/async-data/index.html
+169 silly gunzTarPerm modified mode [ 'examples/async-data/index.html', 436, 420 ]
+170 silly gunzTarPerm extractEntry examples/auth-flow/
+171 silly gunzTarPerm modified mode [ 'examples/auth-flow/', 509, 493 ]
+172 silly gunzTarPerm extractEntry examples/auth-flow/app.js
+173 silly gunzTarPerm modified mode [ 'examples/auth-flow/app.js', 436, 420 ]
+174 silly gunzTarPerm extractEntry examples/auth-flow/index.html
+175 silly gunzTarPerm modified mode [ 'examples/auth-flow/index.html', 436, 420 ]
+176 silly gunzTarPerm extractEntry examples/data-flow/
+177 silly gunzTarPerm modified mode [ 'examples/data-flow/', 509, 493 ]
+178 silly gunzTarPerm extractEntry examples/data-flow/app.css
+179 silly gunzTarPerm modified mode [ 'examples/data-flow/app.css', 436, 420 ]
+180 silly gunzTarPerm extractEntry examples/data-flow/app.js
+181 silly gunzTarPerm modified mode [ 'examples/data-flow/app.js', 436, 420 ]
+182 silly gunzTarPerm extractEntry examples/data-flow/index.html
+183 silly gunzTarPerm modified mode [ 'examples/data-flow/index.html', 436, 420 ]
+184 silly gunzTarPerm extractEntry examples/dynamic-segments/
+185 silly gunzTarPerm modified mode [ 'examples/dynamic-segments/', 509, 493 ]
+186 silly gunzTarPerm extractEntry examples/dynamic-segments/app.js
+187 silly gunzTarPerm modified mode [ 'examples/dynamic-segments/app.js', 436, 420 ]
+188 silly gunzTarPerm extractEntry examples/dynamic-segments/index.html
+189 silly gunzTarPerm modified mode [ 'examples/dynamic-segments/index.html', 436, 420 ]
+190 silly gunzTarPerm extractEntry examples/global.css
+191 silly gunzTarPerm modified mode [ 'examples/global.css', 436, 420 ]
+192 silly gunzTarPerm extractEntry examples/index.html
+193 silly gunzTarPerm modified mode [ 'examples/index.html', 436, 420 ]
+194 silly gunzTarPerm extractEntry examples/master-detail/
+195 silly gunzTarPerm modified mode [ 'examples/master-detail/', 509, 493 ]
+196 silly gunzTarPerm extractEntry examples/master-detail/ContactStore.js
+197 silly gunzTarPerm modified mode [ 'examples/master-detail/ContactStore.js', 436, 420 ]
+198 silly gunzTarPerm extractEntry examples/master-detail/app.css
+199 silly gunzTarPerm modified mode [ 'examples/master-detail/app.css', 436, 420 ]
+200 silly gunzTarPerm extractEntry examples/master-detail/app.js
+201 silly gunzTarPerm modified mode [ 'examples/master-detail/app.js', 436, 420 ]
+202 silly gunzTarPerm extractEntry examples/master-detail/index.html
+203 silly gunzTarPerm modified mode [ 'examples/master-detail/index.html', 436, 420 ]
+204 silly gunzTarPerm extractEntry examples/partial-app-loading/
+205 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/', 509, 493 ]
+206 silly gunzTarPerm extractEntry examples/partial-app-loading/app.js
+207 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/app.js', 436, 420 ]
+208 silly gunzTarPerm extractEntry examples/partial-app-loading/dashboard.js
+209 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/dashboard.js', 436, 420 ]
+210 silly gunzTarPerm extractEntry examples/partial-app-loading/inbox.js
+211 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/inbox.js', 436, 420 ]
+212 silly gunzTarPerm extractEntry examples/partial-app-loading/index.html
+213 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/index.html', 436, 420 ]
+214 silly gunzTarPerm extractEntry examples/query-params/
+215 silly gunzTarPerm modified mode [ 'examples/query-params/', 509, 493 ]
+216 silly gunzTarPerm extractEntry examples/query-params/app.js
+217 silly gunzTarPerm modified mode [ 'examples/query-params/app.js', 436, 420 ]
+218 silly gunzTarPerm extractEntry examples/query-params/index.html
+219 silly gunzTarPerm modified mode [ 'examples/query-params/index.html', 436, 420 ]
+220 silly gunzTarPerm extractEntry examples/rx/
+221 silly gunzTarPerm modified mode [ 'examples/rx/', 509, 493 ]
+222 silly gunzTarPerm extractEntry examples/rx/app.js
+223 silly gunzTarPerm modified mode [ 'examples/rx/app.js', 436, 420 ]
+224 silly gunzTarPerm extractEntry examples/rx/index.html
+225 silly gunzTarPerm modified mode [ 'examples/rx/index.html', 436, 420 ]
+226 silly gunzTarPerm extractEntry examples/shared-root/
+227 silly gunzTarPerm modified mode [ 'examples/shared-root/', 509, 493 ]
+228 silly gunzTarPerm extractEntry examples/shared-root/app.js
+229 silly gunzTarPerm modified mode [ 'examples/shared-root/app.js', 436, 420 ]
+230 silly gunzTarPerm extractEntry examples/shared-root/index.html
+231 silly gunzTarPerm modified mode [ 'examples/shared-root/index.html', 436, 420 ]
+232 silly gunzTarPerm extractEntry examples/sidebar/
+233 silly gunzTarPerm modified mode [ 'examples/sidebar/', 509, 493 ]
+234 silly gunzTarPerm extractEntry examples/sidebar/app.css
+235 silly gunzTarPerm modified mode [ 'examples/sidebar/app.css', 436, 420 ]
+236 silly gunzTarPerm extractEntry examples/sidebar/app.js
+237 silly gunzTarPerm modified mode [ 'examples/sidebar/app.js', 436, 420 ]
+238 silly gunzTarPerm extractEntry examples/sidebar/data.js
+239 silly gunzTarPerm modified mode [ 'examples/sidebar/data.js', 436, 420 ]
+240 silly gunzTarPerm extractEntry examples/sidebar/index.html
+241 silly gunzTarPerm modified mode [ 'examples/sidebar/index.html', 436, 420 ]
+242 silly gunzTarPerm extractEntry examples/simple-master-detail/
+243 silly gunzTarPerm modified mode [ 'examples/simple-master-detail/', 509, 493 ]
+244 silly gunzTarPerm extractEntry examples/simple-master-detail/app.css
+245 silly gunzTarPerm modified mode [ 'examples/simple-master-detail/app.css', 436, 420 ]
+246 silly gunzTarPerm extractEntry examples/simple-master-detail/app.js
+247 silly gunzTarPerm modified mode [ 'examples/simple-master-detail/app.js', 436, 420 ]
+248 silly gunzTarPerm extractEntry examples/simple-master-detail/index.html
+249 silly gunzTarPerm modified mode [ 'examples/simple-master-detail/index.html', 436, 420 ]
+250 silly gunzTarPerm extractEntry examples/transitions/
+251 silly gunzTarPerm modified mode [ 'examples/transitions/', 509, 493 ]
+252 silly gunzTarPerm extractEntry examples/transitions/app.js
+253 silly gunzTarPerm modified mode [ 'examples/transitions/app.js', 436, 420 ]
+254 silly gunzTarPerm extractEntry examples/transitions/index.html
+255 silly gunzTarPerm modified mode [ 'examples/transitions/index.html', 436, 420 ]
+256 silly gunzTarPerm extractEntry examples/webpack.config.js
+257 silly gunzTarPerm modified mode [ 'examples/webpack.config.js', 436, 420 ]
+258 silly gunzTarPerm extractEntry index.js
+259 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+260 silly gunzTarPerm extractEntry karma.conf.js
+261 silly gunzTarPerm modified mode [ 'karma.conf.js', 436, 420 ]
+262 silly gunzTarPerm extractEntry locations/
+263 silly gunzTarPerm modified mode [ 'locations/', 509, 493 ]
+264 silly gunzTarPerm extractEntry locations/HashLocation.js
+265 silly gunzTarPerm modified mode [ 'locations/HashLocation.js', 436, 420 ]
+266 silly gunzTarPerm extractEntry locations/HistoryLocation.js
+267 silly gunzTarPerm modified mode [ 'locations/HistoryLocation.js', 436, 420 ]
+268 silly gunzTarPerm extractEntry locations/RefreshLocation.js
+269 silly gunzTarPerm modified mode [ 'locations/RefreshLocation.js', 436, 420 ]
+270 silly gunzTarPerm extractEntry locations/TestLocation.js
+271 silly gunzTarPerm modified mode [ 'locations/TestLocation.js', 436, 420 ]
+272 silly gunzTarPerm extractEntry locations/tests/
+273 silly gunzTarPerm modified mode [ 'locations/tests/', 509, 493 ]
+274 silly gunzTarPerm extractEntry locations/tests/HashLocation-test.js
+275 silly gunzTarPerm modified mode [ 'locations/tests/HashLocation-test.js', 436, 420 ]
+276 silly gunzTarPerm extractEntry mixins/
+277 silly gunzTarPerm modified mode [ 'mixins/', 509, 493 ]
+278 silly gunzTarPerm extractEntry mixins/FakeNode.js
+279 silly gunzTarPerm modified mode [ 'mixins/FakeNode.js', 436, 420 ]
+280 silly gunzTarPerm extractEntry mixins/Navigation.js
+281 silly gunzTarPerm modified mode [ 'mixins/Navigation.js', 436, 420 ]
+282 silly gunzTarPerm extractEntry mixins/NavigationContext.js
+283 silly gunzTarPerm modified mode [ 'mixins/NavigationContext.js', 436, 420 ]
+284 silly gunzTarPerm extractEntry mixins/RouteHandler.js
+285 silly gunzTarPerm modified mode [ 'mixins/RouteHandler.js', 436, 420 ]
+286 silly gunzTarPerm extractEntry mixins/Scrolling.js
+287 silly gunzTarPerm modified mode [ 'mixins/Scrolling.js', 436, 420 ]
+288 silly gunzTarPerm extractEntry mixins/State.js
+289 silly gunzTarPerm modified mode [ 'mixins/State.js', 436, 420 ]
+290 silly gunzTarPerm extractEntry mixins/StateContext.js
+291 silly gunzTarPerm modified mode [ 'mixins/StateContext.js', 436, 420 ]
+292 silly gunzTarPerm extractEntry mixins/tests/
+293 silly gunzTarPerm modified mode [ 'mixins/tests/', 509, 493 ]
+294 silly gunzTarPerm extractEntry mixins/tests/State-test.js
+295 silly gunzTarPerm modified mode [ 'mixins/tests/State-test.js', 436, 420 ]
+296 silly gunzTarPerm extractEntry package.json
+297 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+298 silly gunzTarPerm extractEntry scripts/
+299 silly gunzTarPerm modified mode [ 'scripts/', 509, 493 ]
+300 silly gunzTarPerm extractEntry scripts/build.sh
+301 silly gunzTarPerm modified mode [ 'scripts/build.sh', 509, 493 ]
+302 silly gunzTarPerm extractEntry scripts/preview-release.sh
+303 silly gunzTarPerm modified mode [ 'scripts/preview-release.sh', 509, 493 ]
+304 silly gunzTarPerm extractEntry scripts/release.sh
+305 silly gunzTarPerm modified mode [ 'scripts/release.sh', 509, 493 ]
+306 silly gunzTarPerm extractEntry tests.webpack.js
+307 silly gunzTarPerm modified mode [ 'tests.webpack.js', 436, 420 ]
+308 silly gunzTarPerm extractEntry tests/
+309 silly gunzTarPerm modified mode [ 'tests/', 509, 493 ]
+310 silly gunzTarPerm extractEntry tests/Router-test.js
+311 silly gunzTarPerm modified mode [ 'tests/Router-test.js', 436, 420 ]
+312 silly gunzTarPerm extractEntry utils/
+313 silly gunzTarPerm modified mode [ 'utils/', 509, 493 ]
+314 silly gunzTarPerm extractEntry utils/Cancellation.js
+315 silly gunzTarPerm modified mode [ 'utils/Cancellation.js', 436, 420 ]
+316 silly gunzTarPerm extractEntry utils/History.js
+317 silly gunzTarPerm modified mode [ 'utils/History.js', 436, 420 ]
+318 silly gunzTarPerm extractEntry utils/Path.js
+319 silly gunzTarPerm modified mode [ 'utils/Path.js', 436, 420 ]
+320 silly gunzTarPerm extractEntry utils/PropTypes.js
+321 silly gunzTarPerm modified mode [ 'utils/PropTypes.js', 436, 420 ]
+322 silly gunzTarPerm extractEntry utils/Redirect.js
+323 silly gunzTarPerm modified mode [ 'utils/Redirect.js', 436, 420 ]
+324 silly gunzTarPerm extractEntry utils/TestHandlers.js
+325 silly gunzTarPerm modified mode [ 'utils/TestHandlers.js', 436, 420 ]
+326 silly gunzTarPerm extractEntry utils/Transition.js
+327 silly gunzTarPerm modified mode [ 'utils/Transition.js', 436, 420 ]
+328 silly gunzTarPerm extractEntry utils/createRouter.js
+329 silly gunzTarPerm modified mode [ 'utils/createRouter.js', 436, 420 ]
+330 silly gunzTarPerm extractEntry utils/createRoutesFromChildren.js
+331 silly gunzTarPerm modified mode [ 'utils/createRoutesFromChildren.js', 436, 420 ]
+332 silly gunzTarPerm extractEntry utils/getWindowScrollPosition.js
+333 silly gunzTarPerm modified mode [ 'utils/getWindowScrollPosition.js', 436, 420 ]
+334 silly gunzTarPerm extractEntry utils/runRouter.js
+335 silly gunzTarPerm modified mode [ 'utils/runRouter.js', 436, 420 ]
+336 silly gunzTarPerm extractEntry utils/supportsHistory.js
+337 silly gunzTarPerm modified mode [ 'utils/supportsHistory.js', 436, 420 ]
+338 silly gunzTarPerm extractEntry utils/tests/
+339 silly gunzTarPerm modified mode [ 'utils/tests/', 509, 493 ]
+340 silly gunzTarPerm extractEntry utils/tests/History-test.js
+341 silly gunzTarPerm modified mode [ 'utils/tests/History-test.js', 436, 420 ]
+342 silly gunzTarPerm extractEntry utils/tests/Path-test.js
+343 silly gunzTarPerm modified mode [ 'utils/tests/Path-test.js', 436, 420 ]
+344 silly gunzTarPerm extractEntry webpack.config.js
+345 silly gunzTarPerm modified mode [ 'webpack.config.js', 436, 420 ]
+346 silly lockFile 30285383-0-705502376658842-tmp-tgz-unpack tar:///var/folders/2m/cp_m9s6s1bzc1bzj9xm1hzsw0000gn/T/npm-3264-bJps5_jp/1426393715513-0.705502376658842/tmp.tgz-unpack
+347 silly lockFile 30285383-0-705502376658842-tmp-tgz-unpack tar:///var/folders/2m/cp_m9s6s1bzc1bzj9xm1hzsw0000gn/T/npm-3264-bJps5_jp/1426393715513-0.705502376658842/tmp.tgz-unpack
+348 silly lockFile 02df474c-715513-0-705502376658842-tmp-tgz tar:///var/folders/2m/cp_m9s6s1bzc1bzj9xm1hzsw0000gn/T/npm-3264-bJps5_jp/1426393715513-0.705502376658842/tmp.tgz
+349 silly lockFile 02df474c-715513-0-705502376658842-tmp-tgz tar:///var/folders/2m/cp_m9s6s1bzc1bzj9xm1hzsw0000gn/T/npm-3264-bJps5_jp/1426393715513-0.705502376658842/tmp.tgz
+350 silly lockFile e5ddca67-ps-github-com-reapp-react-router https://github.com/reapp/react-router
+351 silly lockFile e5ddca67-ps-github-com-reapp-react-router https://github.com/reapp/react-router
+352 silly resolved [ { name: 'react-router',
+352 silly resolved     version: '0.11.6',
+352 silly resolved     description: 'A complete routing library for React.js',
+352 silly resolved     main: 'index.js',
+352 silly resolved     repository:
+352 silly resolved      { type: 'git',
+352 silly resolved        url: 'https://github.com/rackt/react-router.git' },
+352 silly resolved     homepage: 'https://github.com/rackt/react-router/blob/latest/README.md',
+352 silly resolved     bugs: { url: 'https://github.com/rackt/react-router/issues' },
+352 silly resolved     directories: { example: 'examples' },
+352 silly resolved     scripts:
+352 silly resolved      { build: 'NODE_ENV=production webpack index.js dist/react-router.js',
+352 silly resolved        'build-min': 'NODE_ENV=production COMPRESS=1 webpack index.js dist/react-router.min.js',
+352 silly resolved        examples: 'webpack-dev-server --config examples/webpack.config.js --no-info --content-base examples',
+352 silly resolved        test: 'jsxhint . && karma start' },
+352 silly resolved     authors: [ 'Ryan Florence', 'Michael Jackson' ],
+352 silly resolved     license: 'MIT',
+352 silly resolved     devDependencies:
+352 silly resolved      { 'bundle-loader': '^0.5.2',
+352 silly resolved        events: '1.0.2',
+352 silly resolved        expect: '^1.1.0',
+352 silly resolved        'jsx-loader': '^0.12.2',
+352 silly resolved        jsxhint: '^0.8.1',
+352 silly resolved        karma: '^0.12.28',
+352 silly resolved        'karma-chrome-launcher': '^0.1.7',
+352 silly resolved        'karma-cli': '0.0.4',
+352 silly resolved        'karma-firefox-launcher': '^0.1.3',
+352 silly resolved        'karma-mocha': '^0.1.10',
+352 silly resolved        'karma-sourcemap-loader': '^0.3.2',
+352 silly resolved        'karma-webpack': '^1.3.1',
+352 silly resolved        mocha: '^2.0.1',
+352 silly resolved        react: '^0.13.0-beta.1',
+352 silly resolved        'rf-release': '0.4.0',
+352 silly resolved        rx: '2.3.18',
+352 silly resolved        webpack: '^1.4.13',
+352 silly resolved        'webpack-dev-server': '^1.6.6' },
+352 silly resolved     peerDependencies: { react: '^0.13.0-beta.1' },
+352 silly resolved     dependencies: { qs: '2.3.3' },
+352 silly resolved     tags: [ 'react', 'router' ],
+352 silly resolved     keywords:
+352 silly resolved      [ 'react',
+352 silly resolved        'react-component',
+352 silly resolved        'routing',
+352 silly resolved        'route',
+352 silly resolved        'routes',
+352 silly resolved        'router' ],
+352 silly resolved     readme: '[![npm package](https://img.shields.io/npm/v/react-router.svg?style=flat-square)](https://www.npmjs.org/package/react-router)\n[![build status](https://img.shields.io/travis/rackt/react-router.svg?style=flat-square)](https://travis-ci.org/rackt/react-router)\n[![dependency status](https://img.shields.io/david/rackt/react-router.svg?style=flat-square)](https://david-dm.org/rackt/react-router)\n\nReact Router\n============\n\nA complete routing library for React.\n\nDocs\n----\n\n- [Guide: Overview](/docs/guides/overview.md)\n- [API](/docs/api/)\n\nImportant Notes\n---------------\n\n### SemVer\n\nBefore our `1.0` release, breaking API changes will cause a bump to\n`0.x`. For example, `0.4.1` and `0.4.8` will have the same API, but\n`0.5.0` will have breaking changes.\n\nPlease refer to the [upgrade guide](/UPGRADE_GUIDE.md) and\n[changelog](/CHANGELOG.md) when upgrading.\n\nInstallation\n------------\n\n```sh\nnpm install react-router\n# or\nbower install react-router\n```\n\nThis library is written with CommonJS modules. If you are using\nbrowserify, webpack, or similar, you can consume it like anything else\ninstalled from npm.\n\nThere is also a global build available on bower, find the library on\n`window.ReactRouter`.\n\nThe library is also available on the popular CDN [cdnjs](https://cdnjs.com/libraries/react-router).\n\nFeatures\n--------\n\n- Nested views mapped to nested routes\n- Modular construction of route hierarchy\n- Sync and async transition hooks\n- Transition abort / redirect / retry\n- Dynamic segments\n- Query parameters\n- Links with automatic `.active` class when their route is active\n- Multiple root routes\n- Hash or HTML5 history (with fallback) URLs\n- Declarative Redirect routes\n- Declarative NotFound routes\n- Browser scroll behavior with transitions\n\nCheck out the `examples` directory to see how simple previously complex UI\nand workflows are to create.\n\nWhat\'s it look like?\n--------------------\n\n```js\nvar routes = (\n  <Route handler={App} path="/">\n    <DefaultRoute handler={Home} />\n    <Route name="about" handler={About} />\n    <Route name="users" handler={Users}>\n      <Route name="recent-users" path="recent" handler={RecentUsers} />\n      <Route name="user" path="/user/:userId" handler={User} />\n      <NotFoundRoute handler={UserRouteNotFound}/>\n    </Route>\n    <NotFoundRoute handler={NotFound}/>\n    <Redirect from="company" to="about" />\n  </Route>\n);\n\nRouter.run(routes, function (Handler) {\n  React.render(<Handler/>, document.body);\n});\n\n// Or, if you\'d like to use the HTML5 history API for cleaner URLs:\n\nRouter.run(routes, Router.HistoryLocation, function (Handler) {\n  React.render(<Handler/>, document.body);\n});\n```\n\nSee more in the [overview guide](/docs/guides/overview.md).\n\nBenefits of This Approach\n-------------------------\n\n1. **Incredible screen-creation productivity** - There is only one\n   use-case when a user visits a route: render something. Every user\n   interface has layers (or nesting) whether its a simple navbar or\n   multiple levels of master-detail. Coupling nested routes to these\n   nested views gets rid of a ton of work for the developer to wire all\n   of it together when the user switches routes. Adding new screens\n   could not get faster.\n\n2. **Immediate understanding of application structure** - When routes\n   are declared in one place, developers can easily construct a mental\n   image of the application. It\'s essentially a sitemap. There\'s not a\n   better way to get so much information about your app this quickly.\n\n3. **Code tractability** - When a developer gets a ticket to fix a bug\n   at as specific url they simply 1) look at the route config, then 2)\n   go find the handler for that route. Every entry point into your\n   application is represented by these routes.\n\n4. **URLs are your first thought, not an after-thought** - With React\n   Router, you don\'t get UI on the page without configuring a url first.\n   Fortunately, its wildly productive this way, too.\n\nRelated Modules\n---------------\n\n- [rnr-constrained-route](https://github.com/bjyoungblood/rnr-constrained-route) - validate paths\n  and parameters on route handlers.\n- [react-router-bootstrap](https://github.com/mtscout6/react-router-bootstrap) - Integration with [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) components.\n\nContributing\n------------\n\nPlease see [CONTRIBUTING](CONTRIBUTING.md)\n\nThanks, Ember\n-------------\n\nThis library is highly inspired by the Ember.js routing API. In general,\nits a translation of the Ember router api to React. Huge thanks to the\nEmber team for solving the hardest part already.\n\n',
+352 silly resolved     readmeFilename: 'README.md',
+352 silly resolved     _id: 'react-router@0.11.6',
+352 silly resolved     _shasum: '81d116e3b3d92c857e70b21fbf49f16e8faccd51',
+352 silly resolved     _resolved: 'git+https://github.com/reapp/react-router#0ceb428804b71d3f0de569f257e7cd27e4fce223',
+352 silly resolved     _from: 'react-router@git+https://github.com/reapp/react-router#0ceb428804b71d3' } ]
+353 info install react-router@0.11.6 into /Users/cln/src/pet/utmana/reapp
+354 info installOne react-router@0.11.6
+355 verbose node_modules/react-router unbuild
+356 info preuninstall react-router@0.11.6
+357 info uninstall react-router@0.11.6
+358 verbose true,/Users/cln/src/pet/utmana/reapp/node_modules,/Users/cln/src/pet/utmana/reapp/node_modules unbuild react-router@0.11.6
+359 info postuninstall react-router@0.11.6
+360 verbose tar unpack /Users/cln/.npm/react-router/0.11.6/package.tgz
+361 silly lockFile 89773169--reapp-node-modules-react-router tar:///Users/cln/src/pet/utmana/reapp/node_modules/react-router
+362 verbose lock tar:///Users/cln/src/pet/utmana/reapp/node_modules/react-router /Users/cln/.npm/89773169--reapp-node-modules-react-router.lock
+363 silly lockFile c3713f52--react-router-0-11-6-package-tgz tar:///Users/cln/.npm/react-router/0.11.6/package.tgz
+364 verbose lock tar:///Users/cln/.npm/react-router/0.11.6/package.tgz /Users/cln/.npm/c3713f52--react-router-0-11-6-package-tgz.lock
+365 silly gunzTarPerm modes [ '755', '644' ]
+366 silly gunzTarPerm extractEntry
+367 silly gunzTarPerm modified mode [ '', 509, 493 ]
+368 silly gunzTarPerm extractEntry .gitignore
+369 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+370 silly gunzTarPerm extractEntry .jshintignore
+371 silly gunzTarPerm modified mode [ '.jshintignore', 436, 420 ]
+372 silly gunzTarPerm extractEntry .jshintrc
+373 silly gunzTarPerm modified mode [ '.jshintrc', 436, 420 ]
+374 silly gunzTarPerm extractEntry .npmignore
+375 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+376 silly gunzTarPerm extractEntry .travis.yml
+377 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+378 silly gunzTarPerm extractEntry CHANGELOG.md
+379 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+380 silly gunzTarPerm extractEntry CONTRIBUTING.md
+381 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+382 silly gunzTarPerm extractEntry LICENSE
+383 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+384 silly gunzTarPerm extractEntry README.md
+385 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+386 silly gunzTarPerm extractEntry UPGRADE_GUIDE.md
+387 silly gunzTarPerm modified mode [ 'UPGRADE_GUIDE.md', 436, 420 ]
+388 silly gunzTarPerm extractEntry actions/
+389 silly gunzTarPerm modified mode [ 'actions/', 509, 493 ]
+390 silly gunzTarPerm extractEntry actions/LocationActions.js
+391 silly gunzTarPerm modified mode [ 'actions/LocationActions.js', 436, 420 ]
+392 silly gunzTarPerm extractEntry behaviors/
+393 silly gunzTarPerm modified mode [ 'behaviors/', 509, 493 ]
+394 silly gunzTarPerm extractEntry behaviors/ImitateBrowserBehavior.js
+395 silly gunzTarPerm modified mode [ 'behaviors/ImitateBrowserBehavior.js', 436, 420 ]
+396 silly gunzTarPerm extractEntry behaviors/ScrollToTopBehavior.js
+397 silly gunzTarPerm modified mode [ 'behaviors/ScrollToTopBehavior.js', 436, 420 ]
+398 silly gunzTarPerm extractEntry bower.json
+399 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+400 silly gunzTarPerm extractEntry components/
+401 silly gunzTarPerm modified mode [ 'components/', 509, 493 ]
+402 silly gunzTarPerm extractEntry components/DefaultRoute.js
+403 silly gunzTarPerm modified mode [ 'components/DefaultRoute.js', 436, 420 ]
+404 silly gunzTarPerm extractEntry components/Link.js
+405 silly gunzTarPerm modified mode [ 'components/Link.js', 436, 420 ]
+406 silly gunzTarPerm extractEntry components/NotFoundRoute.js
+407 silly gunzTarPerm modified mode [ 'components/NotFoundRoute.js', 436, 420 ]
+408 silly gunzTarPerm extractEntry components/Redirect.js
+409 silly gunzTarPerm modified mode [ 'components/Redirect.js', 436, 420 ]
+410 silly gunzTarPerm extractEntry components/Route.js
+411 silly gunzTarPerm modified mode [ 'components/Route.js', 436, 420 ]
+412 silly gunzTarPerm extractEntry components/RouteHandler.js
+413 silly gunzTarPerm modified mode [ 'components/RouteHandler.js', 436, 420 ]
+414 silly gunzTarPerm extractEntry components/tests/
+415 silly gunzTarPerm modified mode [ 'components/tests/', 509, 493 ]
+416 silly gunzTarPerm extractEntry components/tests/DefaultRoute-test.js
+417 silly gunzTarPerm modified mode [ 'components/tests/DefaultRoute-test.js', 436, 420 ]
+418 silly gunzTarPerm extractEntry components/tests/Link-test.js
+419 silly gunzTarPerm modified mode [ 'components/tests/Link-test.js', 436, 420 ]
+420 silly gunzTarPerm extractEntry components/tests/NotFoundRoute-test.js
+421 silly gunzTarPerm modified mode [ 'components/tests/NotFoundRoute-test.js', 436, 420 ]
+422 silly gunzTarPerm extractEntry components/tests/Redirect-test.js
+423 silly gunzTarPerm modified mode [ 'components/tests/Redirect-test.js', 436, 420 ]
+424 silly gunzTarPerm extractEntry components/tests/RouteHandler-test.js
+425 silly gunzTarPerm modified mode [ 'components/tests/RouteHandler-test.js', 436, 420 ]
+426 silly gunzTarPerm extractEntry dist/
+427 silly gunzTarPerm modified mode [ 'dist/', 509, 493 ]
+428 silly gunzTarPerm extractEntry dist/react-router.js
+429 silly gunzTarPerm modified mode [ 'dist/react-router.js', 436, 420 ]
+430 silly gunzTarPerm extractEntry dist/react-router.min.js
+431 silly gunzTarPerm modified mode [ 'dist/react-router.min.js', 436, 420 ]
+432 silly gunzTarPerm extractEntry docs/
+433 silly gunzTarPerm modified mode [ 'docs/', 509, 493 ]
+434 silly gunzTarPerm extractEntry docs/api/
+435 silly gunzTarPerm modified mode [ 'docs/api/', 509, 493 ]
+436 silly gunzTarPerm extractEntry docs/api/README.md
+437 silly gunzTarPerm modified mode [ 'docs/api/README.md', 436, 420 ]
+438 silly gunzTarPerm extractEntry docs/api/Router.md
+439 silly gunzTarPerm modified mode [ 'docs/api/Router.md', 436, 420 ]
+440 silly gunzTarPerm extractEntry docs/api/components/
+441 silly gunzTarPerm modified mode [ 'docs/api/components/', 509, 493 ]
+442 silly gunzTarPerm extractEntry docs/api/components/DefaultRoute.md
+443 silly gunzTarPerm modified mode [ 'docs/api/components/DefaultRoute.md', 436, 420 ]
+444 silly gunzTarPerm extractEntry docs/api/components/Link.md
+445 silly gunzTarPerm modified mode [ 'docs/api/components/Link.md', 436, 420 ]
+446 silly gunzTarPerm extractEntry docs/api/components/NotFoundRoute.md
+447 silly gunzTarPerm modified mode [ 'docs/api/components/NotFoundRoute.md', 436, 420 ]
+448 silly gunzTarPerm extractEntry docs/api/components/Redirect.md
+449 silly gunzTarPerm modified mode [ 'docs/api/components/Redirect.md', 436, 420 ]
+450 silly gunzTarPerm extractEntry docs/api/components/Route.md
+451 silly gunzTarPerm modified mode [ 'docs/api/components/Route.md', 436, 420 ]
+452 silly gunzTarPerm extractEntry docs/api/components/RouteHandler.md
+453 silly gunzTarPerm modified mode [ 'docs/api/components/RouteHandler.md', 436, 420 ]
+454 silly gunzTarPerm extractEntry docs/api/create.md
+455 silly gunzTarPerm modified mode [ 'docs/api/create.md', 436, 420 ]
+456 silly gunzTarPerm extractEntry docs/api/misc/
+457 silly gunzTarPerm modified mode [ 'docs/api/misc/', 509, 493 ]
+458 silly gunzTarPerm extractEntry docs/api/misc/Location.md
+459 silly gunzTarPerm modified mode [ 'docs/api/misc/Location.md', 436, 420 ]
+460 silly gunzTarPerm extractEntry docs/api/misc/transition.md
+461 silly gunzTarPerm modified mode [ 'docs/api/misc/transition.md', 436, 420 ]
+462 silly gunzTarPerm extractEntry docs/api/mixins/
+463 silly gunzTarPerm modified mode [ 'docs/api/mixins/', 509, 493 ]
+464 silly gunzTarPerm extractEntry docs/api/mixins/Navigation.md
+465 silly gunzTarPerm modified mode [ 'docs/api/mixins/Navigation.md', 436, 420 ]
+466 silly gunzTarPerm extractEntry docs/api/mixins/State.md
+467 silly gunzTarPerm modified mode [ 'docs/api/mixins/State.md', 436, 420 ]
+468 silly gunzTarPerm extractEntry docs/api/run.md
+469 silly gunzTarPerm modified mode [ 'docs/api/run.md', 436, 420 ]
+470 silly gunzTarPerm extractEntry docs/guides/
+471 silly gunzTarPerm modified mode [ 'docs/guides/', 509, 493 ]
+472 silly gunzTarPerm extractEntry docs/guides/flux.md
+473 silly gunzTarPerm modified mode [ 'docs/guides/flux.md', 436, 420 ]
+474 silly gunzTarPerm extractEntry docs/guides/overview.md
+475 silly gunzTarPerm modified mode [ 'docs/guides/overview.md', 436, 420 ]
+476 silly gunzTarPerm extractEntry docs/guides/path-matching.md
+477 silly gunzTarPerm modified mode [ 'docs/guides/path-matching.md', 436, 420 ]
+478 silly gunzTarPerm extractEntry docs/guides/server-rendering.md
+479 silly gunzTarPerm modified mode [ 'docs/guides/server-rendering.md', 436, 420 ]
+480 silly gunzTarPerm extractEntry docs/guides/testing.md
+481 silly gunzTarPerm modified mode [ 'docs/guides/testing.md', 436, 420 ]
+482 silly gunzTarPerm extractEntry examples/
+483 silly gunzTarPerm modified mode [ 'examples/', 509, 493 ]
+484 silly gunzTarPerm extractEntry examples/README.md
+485 silly gunzTarPerm modified mode [ 'examples/README.md', 436, 420 ]
+486 silly gunzTarPerm extractEntry examples/animations/
+487 silly gunzTarPerm modified mode [ 'examples/animations/', 509, 493 ]
+488 silly gunzTarPerm extractEntry examples/animations/app.css
+489 silly gunzTarPerm modified mode [ 'examples/animations/app.css', 436, 420 ]
+490 silly gunzTarPerm extractEntry examples/animations/app.js
+491 silly gunzTarPerm modified mode [ 'examples/animations/app.js', 436, 420 ]
+492 silly gunzTarPerm extractEntry examples/animations/index.html
+493 silly gunzTarPerm modified mode [ 'examples/animations/index.html', 436, 420 ]
+494 silly gunzTarPerm extractEntry examples/async-data/
+495 silly gunzTarPerm modified mode [ 'examples/async-data/', 509, 493 ]
+496 silly gunzTarPerm extractEntry examples/async-data/app.css
+497 silly gunzTarPerm modified mode [ 'examples/async-data/app.css', 436, 420 ]
+498 silly gunzTarPerm extractEntry examples/async-data/app.js
+499 silly gunzTarPerm modified mode [ 'examples/async-data/app.js', 436, 420 ]
+500 silly gunzTarPerm extractEntry examples/async-data/index.html
+501 silly gunzTarPerm modified mode [ 'examples/async-data/index.html', 436, 420 ]
+502 silly gunzTarPerm extractEntry examples/auth-flow/
+503 silly gunzTarPerm modified mode [ 'examples/auth-flow/', 509, 493 ]
+504 silly gunzTarPerm extractEntry examples/auth-flow/app.js
+505 silly gunzTarPerm modified mode [ 'examples/auth-flow/app.js', 436, 420 ]
+506 silly gunzTarPerm extractEntry examples/auth-flow/index.html
+507 silly gunzTarPerm modified mode [ 'examples/auth-flow/index.html', 436, 420 ]
+508 silly gunzTarPerm extractEntry examples/data-flow/
+509 silly gunzTarPerm modified mode [ 'examples/data-flow/', 509, 493 ]
+510 silly gunzTarPerm extractEntry examples/data-flow/app.css
+511 silly gunzTarPerm modified mode [ 'examples/data-flow/app.css', 436, 420 ]
+512 silly gunzTarPerm extractEntry examples/data-flow/app.js
+513 silly gunzTarPerm modified mode [ 'examples/data-flow/app.js', 436, 420 ]
+514 silly gunzTarPerm extractEntry examples/data-flow/index.html
+515 silly gunzTarPerm modified mode [ 'examples/data-flow/index.html', 436, 420 ]
+516 silly gunzTarPerm extractEntry examples/dynamic-segments/
+517 silly gunzTarPerm modified mode [ 'examples/dynamic-segments/', 509, 493 ]
+518 silly gunzTarPerm extractEntry examples/dynamic-segments/app.js
+519 silly gunzTarPerm modified mode [ 'examples/dynamic-segments/app.js', 436, 420 ]
+520 silly gunzTarPerm extractEntry examples/dynamic-segments/index.html
+521 silly gunzTarPerm modified mode [ 'examples/dynamic-segments/index.html', 436, 420 ]
+522 silly gunzTarPerm extractEntry examples/global.css
+523 silly gunzTarPerm modified mode [ 'examples/global.css', 436, 420 ]
+524 silly gunzTarPerm extractEntry examples/index.html
+525 silly gunzTarPerm modified mode [ 'examples/index.html', 436, 420 ]
+526 silly gunzTarPerm extractEntry examples/master-detail/
+527 silly gunzTarPerm modified mode [ 'examples/master-detail/', 509, 493 ]
+528 silly gunzTarPerm extractEntry examples/master-detail/ContactStore.js
+529 silly gunzTarPerm modified mode [ 'examples/master-detail/ContactStore.js', 436, 420 ]
+530 silly gunzTarPerm extractEntry examples/master-detail/app.css
+531 silly gunzTarPerm modified mode [ 'examples/master-detail/app.css', 436, 420 ]
+532 silly gunzTarPerm extractEntry examples/master-detail/app.js
+533 silly gunzTarPerm modified mode [ 'examples/master-detail/app.js', 436, 420 ]
+534 silly gunzTarPerm extractEntry examples/master-detail/index.html
+535 silly gunzTarPerm modified mode [ 'examples/master-detail/index.html', 436, 420 ]
+536 silly gunzTarPerm extractEntry examples/partial-app-loading/
+537 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/', 509, 493 ]
+538 silly gunzTarPerm extractEntry examples/partial-app-loading/app.js
+539 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/app.js', 436, 420 ]
+540 silly gunzTarPerm extractEntry examples/partial-app-loading/dashboard.js
+541 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/dashboard.js', 436, 420 ]
+542 silly gunzTarPerm extractEntry examples/partial-app-loading/inbox.js
+543 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/inbox.js', 436, 420 ]
+544 silly gunzTarPerm extractEntry examples/partial-app-loading/index.html
+545 silly gunzTarPerm modified mode [ 'examples/partial-app-loading/index.html', 436, 420 ]
+546 silly gunzTarPerm extractEntry examples/query-params/
+547 silly gunzTarPerm modified mode [ 'examples/query-params/', 509, 493 ]
+548 silly gunzTarPerm extractEntry examples/query-params/app.js
+549 silly gunzTarPerm modified mode [ 'examples/query-params/app.js', 436, 420 ]
+550 silly gunzTarPerm extractEntry examples/query-params/index.html
+551 silly gunzTarPerm modified mode [ 'examples/query-params/index.html', 436, 420 ]
+552 silly gunzTarPerm extractEntry examples/rx/
+553 silly gunzTarPerm modified mode [ 'examples/rx/', 509, 493 ]
+554 silly gunzTarPerm extractEntry examples/rx/app.js
+555 silly gunzTarPerm modified mode [ 'examples/rx/app.js', 436, 420 ]
+556 silly gunzTarPerm extractEntry examples/rx/index.html
+557 silly gunzTarPerm modified mode [ 'examples/rx/index.html', 436, 420 ]
+558 silly gunzTarPerm extractEntry examples/shared-root/
+559 silly gunzTarPerm modified mode [ 'examples/shared-root/', 509, 493 ]
+560 silly gunzTarPerm extractEntry examples/shared-root/app.js
+561 silly gunzTarPerm modified mode [ 'examples/shared-root/app.js', 436, 420 ]
+562 silly gunzTarPerm extractEntry examples/shared-root/index.html
+563 silly gunzTarPerm modified mode [ 'examples/shared-root/index.html', 436, 420 ]
+564 silly gunzTarPerm extractEntry examples/sidebar/
+565 silly gunzTarPerm modified mode [ 'examples/sidebar/', 509, 493 ]
+566 silly gunzTarPerm extractEntry examples/sidebar/app.css
+567 silly gunzTarPerm modified mode [ 'examples/sidebar/app.css', 436, 420 ]
+568 silly gunzTarPerm extractEntry examples/sidebar/app.js
+569 silly gunzTarPerm modified mode [ 'examples/sidebar/app.js', 436, 420 ]
+570 silly gunzTarPerm extractEntry examples/sidebar/data.js
+571 silly gunzTarPerm modified mode [ 'examples/sidebar/data.js', 436, 420 ]
+572 silly gunzTarPerm extractEntry examples/sidebar/index.html
+573 silly gunzTarPerm modified mode [ 'examples/sidebar/index.html', 436, 420 ]
+574 silly gunzTarPerm extractEntry examples/simple-master-detail/
+575 silly gunzTarPerm modified mode [ 'examples/simple-master-detail/', 509, 493 ]
+576 silly gunzTarPerm extractEntry examples/simple-master-detail/app.css
+577 silly gunzTarPerm modified mode [ 'examples/simple-master-detail/app.css', 436, 420 ]
+578 silly gunzTarPerm extractEntry examples/simple-master-detail/app.js
+579 silly gunzTarPerm modified mode [ 'examples/simple-master-detail/app.js', 436, 420 ]
+580 silly gunzTarPerm extractEntry examples/simple-master-detail/index.html
+581 silly gunzTarPerm modified mode [ 'examples/simple-master-detail/index.html', 436, 420 ]
+582 silly gunzTarPerm extractEntry examples/transitions/
+583 silly gunzTarPerm modified mode [ 'examples/transitions/', 509, 493 ]
+584 silly gunzTarPerm extractEntry examples/transitions/app.js
+585 silly gunzTarPerm modified mode [ 'examples/transitions/app.js', 436, 420 ]
+586 silly gunzTarPerm extractEntry examples/transitions/index.html
+587 silly gunzTarPerm modified mode [ 'examples/transitions/index.html', 436, 420 ]
+588 silly gunzTarPerm extractEntry examples/webpack.config.js
+589 silly gunzTarPerm modified mode [ 'examples/webpack.config.js', 436, 420 ]
+590 silly gunzTarPerm extractEntry index.js
+591 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+592 silly gunzTarPerm extractEntry karma.conf.js
+593 silly gunzTarPerm modified mode [ 'karma.conf.js', 436, 420 ]
+594 silly gunzTarPerm extractEntry locations/
+595 silly gunzTarPerm modified mode [ 'locations/', 509, 493 ]
+596 silly gunzTarPerm extractEntry locations/HashLocation.js
+597 silly gunzTarPerm modified mode [ 'locations/HashLocation.js', 436, 420 ]
+598 silly gunzTarPerm extractEntry locations/HistoryLocation.js
+599 silly gunzTarPerm modified mode [ 'locations/HistoryLocation.js', 436, 420 ]
+600 silly gunzTarPerm extractEntry locations/RefreshLocation.js
+601 silly gunzTarPerm modified mode [ 'locations/RefreshLocation.js', 436, 420 ]
+602 silly gunzTarPerm extractEntry locations/TestLocation.js
+603 silly gunzTarPerm modified mode [ 'locations/TestLocation.js', 436, 420 ]
+604 silly gunzTarPerm extractEntry locations/tests/
+605 silly gunzTarPerm modified mode [ 'locations/tests/', 509, 493 ]
+606 silly gunzTarPerm extractEntry locations/tests/HashLocation-test.js
+607 silly gunzTarPerm modified mode [ 'locations/tests/HashLocation-test.js', 436, 420 ]
+608 silly gunzTarPerm extractEntry mixins/
+609 silly gunzTarPerm modified mode [ 'mixins/', 509, 493 ]
+610 silly gunzTarPerm extractEntry mixins/FakeNode.js
+611 silly gunzTarPerm modified mode [ 'mixins/FakeNode.js', 436, 420 ]
+612 silly gunzTarPerm extractEntry mixins/Navigation.js
+613 silly gunzTarPerm modified mode [ 'mixins/Navigation.js', 436, 420 ]
+614 silly gunzTarPerm extractEntry mixins/NavigationContext.js
+615 silly gunzTarPerm modified mode [ 'mixins/NavigationContext.js', 436, 420 ]
+616 silly gunzTarPerm extractEntry mixins/RouteHandler.js
+617 silly gunzTarPerm modified mode [ 'mixins/RouteHandler.js', 436, 420 ]
+618 silly gunzTarPerm extractEntry mixins/Scrolling.js
+619 silly gunzTarPerm modified mode [ 'mixins/Scrolling.js', 436, 420 ]
+620 silly gunzTarPerm extractEntry mixins/State.js
+621 silly gunzTarPerm modified mode [ 'mixins/State.js', 436, 420 ]
+622 silly gunzTarPerm extractEntry mixins/StateContext.js
+623 silly gunzTarPerm modified mode [ 'mixins/StateContext.js', 436, 420 ]
+624 silly gunzTarPerm extractEntry mixins/tests/
+625 silly gunzTarPerm modified mode [ 'mixins/tests/', 509, 493 ]
+626 silly gunzTarPerm extractEntry mixins/tests/State-test.js
+627 silly gunzTarPerm modified mode [ 'mixins/tests/State-test.js', 436, 420 ]
+628 silly gunzTarPerm extractEntry package.json
+629 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+630 silly gunzTarPerm extractEntry scripts/
+631 silly gunzTarPerm modified mode [ 'scripts/', 509, 493 ]
+632 silly gunzTarPerm extractEntry scripts/build.sh
+633 silly gunzTarPerm modified mode [ 'scripts/build.sh', 509, 493 ]
+634 silly gunzTarPerm extractEntry scripts/preview-release.sh
+635 silly gunzTarPerm modified mode [ 'scripts/preview-release.sh', 509, 493 ]
+636 silly gunzTarPerm extractEntry scripts/release.sh
+637 silly gunzTarPerm modified mode [ 'scripts/release.sh', 509, 493 ]
+638 silly gunzTarPerm extractEntry tests.webpack.js
+639 silly gunzTarPerm modified mode [ 'tests.webpack.js', 436, 420 ]
+640 silly gunzTarPerm extractEntry tests/
+641 silly gunzTarPerm modified mode [ 'tests/', 509, 493 ]
+642 silly gunzTarPerm extractEntry tests/Router-test.js
+643 silly gunzTarPerm modified mode [ 'tests/Router-test.js', 436, 420 ]
+644 silly gunzTarPerm extractEntry utils/
+645 silly gunzTarPerm modified mode [ 'utils/', 509, 493 ]
+646 silly gunzTarPerm extractEntry utils/Cancellation.js
+647 silly gunzTarPerm modified mode [ 'utils/Cancellation.js', 436, 420 ]
+648 silly gunzTarPerm extractEntry utils/History.js
+649 silly gunzTarPerm modified mode [ 'utils/History.js', 436, 420 ]
+650 silly gunzTarPerm extractEntry utils/Path.js
+651 silly gunzTarPerm modified mode [ 'utils/Path.js', 436, 420 ]
+652 silly gunzTarPerm extractEntry utils/PropTypes.js
+653 silly gunzTarPerm modified mode [ 'utils/PropTypes.js', 436, 420 ]
+654 silly gunzTarPerm extractEntry utils/Redirect.js
+655 silly gunzTarPerm modified mode [ 'utils/Redirect.js', 436, 420 ]
+656 silly gunzTarPerm extractEntry utils/TestHandlers.js
+657 silly gunzTarPerm modified mode [ 'utils/TestHandlers.js', 436, 420 ]
+658 silly gunzTarPerm extractEntry utils/Transition.js
+659 silly gunzTarPerm modified mode [ 'utils/Transition.js', 436, 420 ]
+660 silly gunzTarPerm extractEntry utils/createRouter.js
+661 silly gunzTarPerm modified mode [ 'utils/createRouter.js', 436, 420 ]
+662 silly gunzTarPerm extractEntry utils/createRoutesFromChildren.js
+663 silly gunzTarPerm modified mode [ 'utils/createRoutesFromChildren.js', 436, 420 ]
+664 silly gunzTarPerm extractEntry utils/getWindowScrollPosition.js
+665 silly gunzTarPerm modified mode [ 'utils/getWindowScrollPosition.js', 436, 420 ]
+666 silly gunzTarPerm extractEntry utils/runRouter.js
+667 silly gunzTarPerm modified mode [ 'utils/runRouter.js', 436, 420 ]
+668 silly gunzTarPerm extractEntry utils/supportsHistory.js
+669 silly gunzTarPerm modified mode [ 'utils/supportsHistory.js', 436, 420 ]
+670 silly gunzTarPerm extractEntry utils/tests/
+671 silly gunzTarPerm modified mode [ 'utils/tests/', 509, 493 ]
+672 silly gunzTarPerm extractEntry utils/tests/History-test.js
+673 silly gunzTarPerm modified mode [ 'utils/tests/History-test.js', 436, 420 ]
+674 silly gunzTarPerm extractEntry utils/tests/Path-test.js
+675 silly gunzTarPerm modified mode [ 'utils/tests/Path-test.js', 436, 420 ]
+676 silly gunzTarPerm extractEntry webpack.config.js
+677 silly gunzTarPerm modified mode [ 'webpack.config.js', 436, 420 ]
+678 silly lockFile 89773169--reapp-node-modules-react-router tar:///Users/cln/src/pet/utmana/reapp/node_modules/react-router
+679 silly lockFile 89773169--reapp-node-modules-react-router tar:///Users/cln/src/pet/utmana/reapp/node_modules/react-router
+680 silly lockFile c3713f52--react-router-0-11-6-package-tgz tar:///Users/cln/.npm/react-router/0.11.6/package.tgz
+681 silly lockFile c3713f52--react-router-0-11-6-package-tgz tar:///Users/cln/.npm/react-router/0.11.6/package.tgz
+682 info preinstall react-router@0.11.6
+683 verbose readDependencies using package.json deps
+684 verbose readDependencies using package.json deps
+685 verbose cache add [ 'qs@2.3.3', null ]
+686 verbose cache add name=undefined spec="qs@2.3.3" args=["qs@2.3.3",null]
+687 verbose parsed url { protocol: null,
+687 verbose parsed url   slashes: null,
+687 verbose parsed url   auth: null,
+687 verbose parsed url   host: null,
+687 verbose parsed url   port: null,
+687 verbose parsed url   hostname: null,
+687 verbose parsed url   hash: null,
+687 verbose parsed url   search: null,
+687 verbose parsed url   query: null,
+687 verbose parsed url   pathname: 'qs@2.3.3',
+687 verbose parsed url   path: 'qs@2.3.3',
+687 verbose parsed url   href: 'qs@2.3.3' }
+688 verbose cache add name="qs" spec="2.3.3" args=["qs","2.3.3"]
+689 verbose parsed url { protocol: null,
+689 verbose parsed url   slashes: null,
+689 verbose parsed url   auth: null,
+689 verbose parsed url   host: null,
+689 verbose parsed url   port: null,
+689 verbose parsed url   hostname: null,
+689 verbose parsed url   hash: null,
+689 verbose parsed url   search: null,
+689 verbose parsed url   query: null,
+689 verbose parsed url   pathname: '2.3.3',
+689 verbose parsed url   path: '2.3.3',
+689 verbose parsed url   href: '2.3.3' }
+690 verbose addNamed [ 'qs', '2.3.3' ]
+691 verbose addNamed [ '2.3.3', '2.3.3' ]
+692 silly lockFile 91f8f145-qs-2-3-3 qs@2.3.3
+693 verbose lock qs@2.3.3 /Users/cln/.npm/91f8f145-qs-2-3-3.lock
+694 verbose request where is /qs
+695 verbose request registry https://registry.npmjs.org/
+696 verbose request id c70066e453c0621e
+697 verbose url raw /qs
+698 verbose url resolving [ 'https://registry.npmjs.org/', './qs' ]
+699 verbose url resolved https://registry.npmjs.org/qs
+700 verbose request where is https://registry.npmjs.org/qs
+701 info trying registry request attempt 1 at 05:28:35
+702 verbose etag "E4OAMZ0YUGKFWI4TDFREILSBQ"
+703 http GET https://registry.npmjs.org/qs
+704 http 304 https://registry.npmjs.org/qs
+705 silly registry.get cb [ 304,
+705 silly registry.get   { date: 'Sun, 15 Mar 2015 04:28:36 GMT',
+705 silly registry.get     server: 'Apache',
+705 silly registry.get     via: '1.1 varnish',
+705 silly registry.get     'last-modified': 'Sun, 15 Mar 2015 04:28:36 GMT',
+705 silly registry.get     'cache-control': 'max-age=60',
+705 silly registry.get     etag: '"E4OAMZ0YUGKFWI4TDFREILSBQ"',
+705 silly registry.get     age: '0',
+705 silly registry.get     'x-served-by': 'cache-fra1244-FRA',
+705 silly registry.get     'x-cache': 'HIT',
+705 silly registry.get     'x-cache-hits': '1',
+705 silly registry.get     'x-timer': 'S1426393716.092268,VS0,VE179',
+705 silly registry.get     vary: 'Accept',
+705 silly registry.get     'content-length': '0',
+705 silly registry.get     'keep-alive': 'timeout=10, max=50',
+705 silly registry.get     connection: 'Keep-Alive' } ]
+706 verbose etag https://registry.npmjs.org/qs from cache
+707 silly lockFile 91f8f145-qs-2-3-3 qs@2.3.3
+708 silly lockFile 91f8f145-qs-2-3-3 qs@2.3.3
+709 silly resolved [ { name: 'qs',
+709 silly resolved     version: '2.3.3',
+709 silly resolved     description: 'A querystring parser that supports nesting and arrays, with a depth limit',
+709 silly resolved     homepage: 'https://github.com/hapijs/qs',
+709 silly resolved     main: 'index.js',
+709 silly resolved     dependencies: {},
+709 silly resolved     devDependencies: { code: '1.x.x', lab: '5.x.x' },
+709 silly resolved     scripts: { test: 'make test-cov' },
+709 silly resolved     repository: { type: 'git', url: 'https://github.com/hapijs/qs.git' },
+709 silly resolved     keywords: [ 'querystring', 'qs' ],
+709 silly resolved     licenses: [ [Object] ],
+709 silly resolved     gitHead: '9250c4cda5102fcf72441445816e6d311fc6813d',
+709 silly resolved     bugs: { url: 'https://github.com/hapijs/qs/issues' },
+709 silly resolved     _id: 'qs@2.3.3',
+709 silly resolved     _shasum: 'e9e85adbe75da0bbe4c8e0476a086290f863b404',
+709 silly resolved     _from: 'qs@2.3.3',
+709 silly resolved     _npmVersion: '2.1.6',
+709 silly resolved     _nodeVersion: '0.10.32',
+709 silly resolved     _npmUser: { name: 'nlf', email: 'quitlahok@gmail.com' },
+709 silly resolved     maintainers: [ [Object], [Object] ],
+709 silly resolved     dist:
+709 silly resolved      { shasum: 'e9e85adbe75da0bbe4c8e0476a086290f863b404',
+709 silly resolved        tarball: 'http://registry.npmjs.org/qs/-/qs-2.3.3.tgz' },
+709 silly resolved     directories: {},
+709 silly resolved     _resolved: 'https://registry.npmjs.org/qs/-/qs-2.3.3.tgz',
+709 silly resolved     readme: 'ERROR: No README data found!' } ]
+710 info install qs@2.3.3 into /Users/cln/src/pet/utmana/reapp/node_modules/react-router
+711 info installOne qs@2.3.3
+712 verbose node_modules/react-router/node_modules/qs unbuild
+713 verbose tar unpack /Users/cln/.npm/qs/2.3.3/package.tgz
+714 silly lockFile bbc59c40-les-react-router-node-modules-qs tar:///Users/cln/src/pet/utmana/reapp/node_modules/react-router/node_modules/qs
+715 verbose lock tar:///Users/cln/src/pet/utmana/reapp/node_modules/react-router/node_modules/qs /Users/cln/.npm/bbc59c40-les-react-router-node-modules-qs.lock
+716 silly lockFile a20a018b-ers-cln-npm-qs-2-3-3-package-tgz tar:///Users/cln/.npm/qs/2.3.3/package.tgz
+717 verbose lock tar:///Users/cln/.npm/qs/2.3.3/package.tgz /Users/cln/.npm/a20a018b-ers-cln-npm-qs-2-3-3-package-tgz.lock
+718 silly gunzTarPerm modes [ '755', '644' ]
+719 silly gunzTarPerm extractEntry package.json
+720 silly gunzTarPerm extractEntry .npmignore
+721 silly gunzTarPerm extractEntry README.md
+722 silly gunzTarPerm extractEntry LICENSE
+723 silly gunzTarPerm extractEntry index.js
+724 silly gunzTarPerm extractEntry CHANGELOG.md
+725 silly gunzTarPerm extractEntry CONTRIBUTING.md
+726 silly gunzTarPerm extractEntry Makefile
+727 silly gunzTarPerm extractEntry .jshintignore
+728 silly gunzTarPerm extractEntry .jshintrc
+729 silly gunzTarPerm extractEntry lib/index.js
+730 silly gunzTarPerm extractEntry lib/parse.js
+731 silly gunzTarPerm extractEntry lib/stringify.js
+732 silly gunzTarPerm extractEntry lib/utils.js
+733 silly gunzTarPerm extractEntry .travis.yml
+734 silly gunzTarPerm extractEntry test/parse.js
+735 silly gunzTarPerm extractEntry test/stringify.js
+736 silly lockFile bbc59c40-les-react-router-node-modules-qs tar:///Users/cln/src/pet/utmana/reapp/node_modules/react-router/node_modules/qs
+737 silly lockFile bbc59c40-les-react-router-node-modules-qs tar:///Users/cln/src/pet/utmana/reapp/node_modules/react-router/node_modules/qs
+738 silly lockFile a20a018b-ers-cln-npm-qs-2-3-3-package-tgz tar:///Users/cln/.npm/qs/2.3.3/package.tgz
+739 silly lockFile a20a018b-ers-cln-npm-qs-2-3-3-package-tgz tar:///Users/cln/.npm/qs/2.3.3/package.tgz
+740 info preinstall qs@2.3.3
+741 verbose readDependencies using package.json deps
+742 verbose readDependencies using package.json deps
+743 silly resolved []
+744 verbose about to build /Users/cln/src/pet/utmana/reapp/node_modules/react-router/node_modules/qs
+745 info build /Users/cln/src/pet/utmana/reapp/node_modules/react-router/node_modules/qs
+746 verbose linkStuff [ false,
+746 verbose linkStuff   false,
+746 verbose linkStuff   false,
+746 verbose linkStuff   '/Users/cln/src/pet/utmana/reapp/node_modules/react-router/node_modules' ]
+747 info linkStuff qs@2.3.3
+748 verbose linkBins qs@2.3.3
+749 verbose linkMans qs@2.3.3
+750 verbose rebuildBundles qs@2.3.3
+751 info install qs@2.3.3
+752 info postinstall qs@2.3.3
+753 verbose about to build /Users/cln/src/pet/utmana/reapp/node_modules/react-router
+754 info build /Users/cln/src/pet/utmana/reapp/node_modules/react-router
+755 verbose linkStuff [ false,
+755 verbose linkStuff   false,
+755 verbose linkStuff   false,
+755 verbose linkStuff   '/Users/cln/src/pet/utmana/reapp/node_modules' ]
+756 info linkStuff react-router@0.11.6
+757 verbose linkBins react-router@0.11.6
+758 verbose linkMans react-router@0.11.6
+759 verbose rebuildBundles react-router@0.11.6
+760 verbose rebuildBundles [ 'qs' ]
+761 info install react-router@0.11.6
+762 info postinstall react-router@0.11.6
+763 info build /Users/cln/src/pet/utmana/reapp
+764 verbose linkStuff [ false, false, false, '/Users/cln/src/pet/utmana' ]
+765 info linkStuff reapp@1.0.0
+766 verbose linkBins reapp@1.0.0
+767 verbose linkMans reapp@1.0.0
+768 verbose rebuildBundles reapp@1.0.0
+769 verbose rebuildBundles [ 'react',
+769 verbose rebuildBundles   'react-router',
+769 verbose rebuildBundles   'reapp-component',
+769 verbose rebuildBundles   'reapp-platform',
+769 verbose rebuildBundles   'reapp-request',
+769 verbose rebuildBundles   'reapp-routes',
+769 verbose rebuildBundles   'reapp-ui' ]
+770 info install reapp@1.0.0
+771 info postinstall reapp@1.0.0
+772 info prepublish reapp@1.0.0
+773 error peerinvalid The package react does not satisfy its siblings' peerDependencies requirements!
+773 error peerinvalid Peer reapp-platform@1.0.5 wants react@^0.13.0-beta.1
+773 error peerinvalid Peer reapp-ui@0.10.23 wants react@^0.13.0-beta.1
+773 error peerinvalid Peer reapp-routes@0.9.10 wants react@^0.13.0-beta.1
+773 error peerinvalid Peer react-router@0.11.6 wants react@^0.13.0-beta.1
+774 error System Darwin 14.3.0
+775 error command "node" "/usr/local/bin/npm" "install"
+776 error cwd /Users/cln/src/pet/utmana/reapp
+777 error node -v v0.10.33
+778 error npm -v 1.4.28
+779 error code EPEERINVALID
+780 verbose exit [ 1, true ]

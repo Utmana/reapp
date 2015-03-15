@@ -23,6 +23,7 @@ export default React.createClass({
             <ListItem title="pla"/>
             <ListItem title="pla"/>
           </List>
+          <Button onTap={() => this.transitionTo('edit', {id:123})}>Föreslå ny utmaning</Button>
         </View>
 
         {this.childRouteHandler()}

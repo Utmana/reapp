@@ -21,7 +21,8 @@ module.exports = ({ routes, route }) =>
   routes(require,
     route('app', '/', { dir: '' },
       route('challenges', '/',
-        route('challenge', '/challenge/:id')
+        route('challenge', '/challenge/:id'),
+        route('edit', '/challenge/:id/edit')
       ),
       route('teams', '/teams')
     )
