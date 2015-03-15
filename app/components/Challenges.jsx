@@ -34,7 +34,7 @@ export default React.createClass({
     var _this = this;
     function renderListItem(data) {
       return (
-        <ListItem key={data._id} title={data.summary} titleSub={data.summary} onTap={() => _this.transitionTo('challenge', {id: data._id})}/>
+        <ListItem key={data._id} title={data.summary} titleSub={data.summary} onTap={() => _this.transitionTo('challenge', {id: data._id})}></ListItem>
       );
     }
     return (
