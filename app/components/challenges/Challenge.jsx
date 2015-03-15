@@ -8,6 +8,7 @@ import Label from 'reapp-ui/components/Label';
 import Title from 'reapp-ui/components/Title';
 import challengesStore from '../../stores/challenges';
 import Router from 'react-router';
+import AppDispatcher from '../../dispatcher';
 
 export default React.createClass({
   mixins: [Router.Navigation, Router.State],
@@ -43,7 +44,16 @@ export default React.createClass({
       });
   },
   skip() {
-    // alert('Not yet implemented!!!');
+    alert('Not yet implemented!!!');
+  },
+  del() {
+    if (confirm('Are you sure')) {
+      AppDispatcher.dispatch({
+        actionType: 'delete',
+        data: this.state.challenge._id
+      });
+      this.transitionTo('/');
+    }
   },
   render() {
     var backButton = (
@@ -56,7 +66,7 @@ export default React.createClass({
           <h2>{this.state.challenge.summary}</h2>
         </Card>
         <Card>
-          <p>{this.state.challenge.summary}</p>
+          <p>{this.state.challenge.body}</p>
           <a href="http://www.1177.se/Jonkopings-lan/Fakta-och-rad/Behandlingar/Hjart-lungraddning-HLR/">Länk med mer information</a>
         </Card>
         <ButtonGroup>
@@ -67,6 +77,10 @@ export default React.createClass({
           När du accepterar denna utmaning kommer du ha trettio minuter att slutföra utmaningen.
         </p>
         <Title>Statistik</Title>
+        <ButtonGroup>
+          <Button color="blue" onTap={() => this.transitionTo('edit', { id: this.state.challenge._id})}>Redigera</Button>
+          <Button onTap={this.del}>Ta bort</Button>
+        </ButtonGroup>
       </View>
     );
   }

@@ -46,6 +46,9 @@ var ChallengesStore = assign({}, EventEmitter.prototype, {
   },
   create(data) {
     return request.post(`${BASE_URL}/challenges`, data)
+  },
+  del(id) {
+    return request.del(`${BASE_URL}/challenges/${id}`, {});
   }
 });
 
@@ -54,9 +57,13 @@ AppDispatcher.register(function (action) {
     case 'save':
       var data = action.data;
       if (data.id) {
-        return ChallengesStore.edit(data);
+        ChallengesStore.edit(data);
+      } else {
+        ChallengesStore.create(data);
       }
-      return ChallengesStore.create(data);
+      break;
+    case 'delete':
+      ChallengesStore.del(action.data);
       break;
   }
 });
