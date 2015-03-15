@@ -17,6 +17,9 @@
     "reapp-platform": "^1.0.5",
     "reapp-request": "^0.2.0",
     "reapp-routes": "^0.9.10",
-    "reapp-ui": "^0.10.23"
+    "reapp-ui": "^0.10.23",
+    "flux": "^2.0.1",
+    "object-assign": "^2.0.0",
+    "browser-request": "^0.3.3"
   }
 }

@@ -27,3 +27,5 @@ module.exports = ({ routes, route }) =>
       route('teams', '/teams')
     )
   );
+
+
