@@ -5,10 +5,13 @@ import View from 'reapp-ui/views/View';
 import Button from 'reapp-ui/components/Button';
 import TitleBar from 'reapp-ui/components/TitleBar';
 import List from 'reapp-ui/components/List';
+import Badge from 'reapp-ui/components/Badge';
 import Title from 'reapp-ui/components/Title';
 import Icon from 'reapp-ui/components/Icon';
 import ListItem from 'reapp-ui/components/ListItem';
 import challengesStore from '../stores/challenges';
+
+require('./Challenges.styl');
 
 export default React.createClass({
   mixins: [
@@ -34,7 +37,12 @@ export default React.createClass({
     var _this = this;
     function renderListItem(data) {
       return (
-        <ListItem key={data._id} title={data.summary} titleSub={data.body} onTap={() => _this.transitionTo('challenge', {id: data._id})}></ListItem>
+        <ListItem key={data._id} title={data.summary} titleSub={data.body} onTap={() => _this.transitionTo('challenge', {id: data._id})}>
+          <ul>
+            <li className="accepted">33 accepterade utmaningen.</li>
+            <li className="accepted">22% genomförde utmaningen.</li>
+          </ul>
+        </ListItem>
       );
     }
     return (

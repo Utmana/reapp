@@ -49,8 +49,8 @@ export default React.createClass({
           <Textarea placeholder="Beskriv vad mottagaren ska göra och varför det gör världen till en bättre plats" valueLink={this.linkState('body')}/>
         </Card>
         <ButtonGroup>
-          <Button onTap={this.save}>Acceptera</Button>
-          <Button onTap={this.back}>Skippa</Button>
+          <Button color="green" onTap={this.save}>Spara</Button>
+          <Button color="black" onTap={this.back}>Ångra</Button>
         </ButtonGroup>
       </View>
     );

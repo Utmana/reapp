@@ -65,20 +65,17 @@ export default React.createClass({
         <Card>
           <h2>{this.state.challenge.summary}</h2>
         </Card>
-        <Card>
+        <Card show={this.state.challenge.body || this.state.challenge.link }>
           <p>{this.state.challenge.body}</p>
-          <a href="http://www.1177.se/Jonkopings-lan/Fakta-och-rad/Behandlingar/Hjart-lungraddning-HLR/">Länk med mer information</a>
+          <a href={this.state.challenge.link}>Länk med mer information</a>
         </Card>
-        <ButtonGroup>
-          <Button color="blue" onTap={this.accept}>Acceptera</Button>
-          <Button onTap={this.skip}>Skippa</Button>
-        </ButtonGroup>
+        <Button color="blue" onTap={this.accept}>Acceptera utmaningen</Button>
         <p>
           När du accepterar denna utmaning kommer du ha trettio minuter att slutföra utmaningen.
         </p>
-        <Title>Statistik</Title>
+        <Title>Admin</Title>
         <ButtonGroup>
-          <Button color="blue" onTap={() => this.transitionTo('edit', { id: this.state.challenge._id})}>Redigera</Button>
+          <Button onTap={() => this.transitionTo('edit', { id: this.state.challenge._id})}>Redigera</Button>
           <Button onTap={this.del}>Ta bort</Button>
         </ButtonGroup>
       </View>

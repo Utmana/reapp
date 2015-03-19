@@ -26,7 +26,6 @@ export default React.createClass({
 
     return (
       <LayoutLeftNav
-        title="Utmana"
         side={menu}
         handle={button}>
         <RouteHandler {...this.props} />

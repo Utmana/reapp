@@ -6,8 +6,8 @@ module.exports = {
   alertColor: '#fff',
 
   // Badge
-  badgeBG: c.mid,
-  badgeColor: '#fff',
+  badgeBG: '#c1c1bb',
+  badgeColor: '#333',
 
   // Bar
   barBG: '#f6f6f6',
@@ -43,27 +43,16 @@ module.exports = {
   listItemAfterColor: '#7b7b7b',
   listItemTitleAfterColor: '#7b7b7b',
 
-  // Popover
-  popoverArrowSize: 26,
-  popoverBG: '#fff',
-  popoverItemBorder: '1px solid #ccc',
-  popoverOverlayBG: 'rgba(0,0,0,0.3)',
-
-  // SearchBar
-  searchBarHeight: 44,
-  searchBarBG: '#bdbdc3',
-  searchBarBorderColor: '#a6a6a6',
-
   // TitleBar
   // iOS7 add extra padding for statusbar
   titleBarHeight: (c.ios7 || c.standalone) ? 64 : 44,
   titleBarPaddingTop: (c.ios7 || c.standalone) ? 20 : 0,
   titleBarColor: c.black,
   titleBarBorderColor: c.light,
-  titleBarFontSize: '16px',
+  titleBarFontSize: '17px',
   titleBarBG: '#262729',
 
   // View
-  viewBG: '#d7d3b9',
+  viewBG: c.light,
   viewPad: '10px'
 };
