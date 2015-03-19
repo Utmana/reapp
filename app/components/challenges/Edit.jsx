@@ -22,7 +22,7 @@ export default React.createClass({
   },
   getInitialState() {
     var params = this.getParams();
-    if (params.id !== -1) {
+    if (params.id !== '-1') {
       var _this = this;
       challengesStore
         .get(params.id)
