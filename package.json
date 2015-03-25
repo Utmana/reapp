@@ -48,6 +48,7 @@
     "reapp-component": "1.0.1",
     "reapp-platform": "1.0.5",
     "reapp-request": "0.2.0",
+    "reapp-routes": "^0.10.3",
     "reapp-ui": "^0.10.23"
   },
   "devDependencies": {
