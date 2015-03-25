@@ -1,0 +1,9 @@
+{
+  "key": "foo.bar",
+  "secret": "herp.derp",
+  "bucket": "app.utmana.me",
+  "region": "eu-west-1",
+  "gzip": true,
+  "gzipExclude": [".jpg", ".png", ".jpeg", ".JPG", ".PNG"],
+  "maxOperations": 20
+}

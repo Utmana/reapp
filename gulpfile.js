@@ -7,6 +7,7 @@ var cache = require('gulp-cached');
 var s3 = require('gulp-s3');
 var pkg = require('./package');
 var jshintConfig = pkg.jshintConfig;
+var awsConfig = require('./aws');
 
 
 var PATH = {
@@ -18,7 +19,6 @@ var PATH = {
 gulp.task('jshint', function () {
   var stream = gulp.src(PATH.SOURCE + '*.js')
     .pipe(cache('jshint'))
-    // .pipe(react()).on('error', handleErr)
     .pipe(jshint(jshintConfig))
     .pipe(jshint.reporter(stylish));
 
@@ -30,19 +30,15 @@ gulp.task('jshint', function () {
 
 gulp.task('run', shell.task('reapp run'));
 
-gulp.task('build', shell.task('reapp build'));
+gulp.task('build', ['jest'], shell.task('reapp build'));
 
 gulp.task('watch', function () {
   gulp.watch([PATH.SOURCE + '**/*.js', PATH.SOURCE + '**/*.jsx', PATH.TEST + '**/*.js'], ['jshint', 'jest']);
 });
 
-gulp.task('s3', ['jest', 'build'], function () {
-  var awsConfig = {
-    "key": "AKIAI3Z7CUAFHG53DMJA",
-    "secret": "acYxWRu5RRa6CwzQuhdXEfTpbQA+1XQJ7Z1bGTCx",
-    "bucket": "dev.example.com",
-    "region": "eu-west-1"
-  };
+gulp.task('s3', ['build'], function () {
+  awsConfig.key = process.env.AWS_ACCESS_KEY_ID;
+  awsConfig.secret = process.env.AWS_SECRET_ACCESS_KEY;
   gulp.src('./build/**')
     .pipe(s3(awsConfig));
 });
