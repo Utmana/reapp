@@ -53,6 +53,6 @@ module.exports = {
   titleBarBG: '#262729',
 
   // View
-  viewBG: c.light,
+  viewBG: '#e6eaea',
   viewPad: '10px'
 };
