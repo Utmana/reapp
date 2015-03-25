@@ -10,10 +10,31 @@
     "test": "jest",
     "start": "reapp run"
   },
+  "jshintConfig": {
+    "globalstrict": true,
+    "unused": true,
+    "node": true,
+    "browser": true,
+    "esnext": true,
+    "newcap": false,
+    "predef": [
+      "require",
+      "module"
+    ]
+  },
   "jest": {
-    "scriptPreprocessor": "preprocessor.js",
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
     "unmockedModulePathPatterns": [
       "node_modules/react"
+    ],
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
     ]
   },
   "dependencies": {
@@ -28,11 +49,15 @@
     "object-assign": "^2.0.0",
     "browser-request": "^0.3.3",
     "q": "^1.2.0",
-    "jest-cli": "^0.4.0",
     "react-tools": "^0.12.2"
   },
   "devDependencies": {
+    "jest-cli": "^0.4.0",
     "gulp": "^3.8.11",
-    "gulp-shell": "^0.4.0"
+    "gulp-shell": "^0.4.0",
+    "babel-jest": "^4.0.0",
+    "gulp-jshint": "^1.9.4",
+    "gulp-cached": "^1.0.4",
+    "jshint-stylish": "^1.0.1"
   }
 }

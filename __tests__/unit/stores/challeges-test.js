@@ -34,7 +34,7 @@ describe('/stores/Challenges', function () {
     });
   });
 
-  xdescribe('#getList', function () {
+  describe('#getList', function () {
     it('should be defined and a function', function () {
       expect(Challenges.getList).toBeDefined();
       expect(Challenges.getList).toEqual(jasmine.any(Function));
@@ -47,7 +47,7 @@ describe('/stores/Challenges', function () {
     });
   });
 
-  xdescribe('#accept', function () {
+  describe('#accept', function () {
     it('should be defined and a function', function () {
       expect(Challenges.accept).toBeDefined();
       expect(Challenges.accept).toEqual(jasmine.any(Function));

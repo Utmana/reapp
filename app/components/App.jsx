@@ -1,3 +1,4 @@
+'use strict';
 import React from 'react';
 import { Link, RouteHandler } from 'react-router';
 import Menu from 'reapp-ui/components/Menu';
